@@ -1,8 +1,21 @@
-import '../styles/globals.css'
-import type { AppProps } from 'next/app'
+import {AppProps} from 'next/app';
+import Head from 'next/head';
+import {FC} from 'react';
 
-function MyApp({ Component, pageProps }: AppProps) {
-  return <Component {...pageProps} />
-}
+require('../styles/globals.css');
 
-export default MyApp
+const App: FC<AppProps> = ({Component, pageProps}) => {
+    return (
+        <>
+            <Head>
+                <title>Dhiraj Chauhan</title>
+            </Head>
+
+            <div className="flex flex-col h-screen">
+                <Component {...pageProps} />
+            </div>
+        </>
+    );
+};
+
+export default App;
