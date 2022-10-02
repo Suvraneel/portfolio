@@ -3,6 +3,9 @@ module.exports = {
     content: ["./src/**/*.{js,jsx,ts,tsx}"],
     darkMode: "media",
     theme: {
+        fontFamily: {
+            'sans': ['Noto Sans']
+        },
         extend: {},
     },
     plugins: [
@@ -14,16 +17,16 @@ module.exports = {
         // TODO: Theme needs works
         themes: [
             {
-                'solana': {                          /* your theme name */
+                'portfolio': {                          /* your theme name */
                     fontFamily: {
                         display: ['PT Mono, monospace'],
                         body: ['Inter, sans-serif'],
                     },
-                    'primary': '#2a2a2a',           /* Primary color */
+                    'primary': '#8332AC',           /* Primary color */
                     'primary-focus': '#9945FF',     /* Primary color - focused */
                     'primary-content': '#ffffff',   /* Foreground content color to use on primary color */
 
-                    'secondary': '#f6d860',         /* Secondary color */
+                    'secondary': '#EF8275',         /* Secondary color */
                     'secondary-focus': '#f3cc30',   /* Secondary color - focused */
                     'secondary-content': '#ffffff', /* Foreground content color to use on secondary color */
 
@@ -39,6 +42,8 @@ module.exports = {
                     'base-200': '#35363a',          /* Base color, a little darker */
                     'base-300': '#222222',          /* Base color, even more darker */
                     'base-content': '#f9fafb',      /* Foreground content color to use on base color */
+
+                    'aquamarine': '#5DD39E',
 
                     'info': '#2094f3',              /* Info */
                     'success': '#009485',           /* Success */
