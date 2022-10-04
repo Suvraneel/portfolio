@@ -9,6 +9,7 @@ import ScrollDown from "./scrolldown";
 const HeroSection = () => {
     return (
         <div
+            id="home"
             className="relative mr-24 min-h-screen font-sans flex items-center justify-center bg-[#0A192F] text-white">
             <div className="flex items-center justify-center text-center h-screen">
                 <ol>

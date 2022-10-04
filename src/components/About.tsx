@@ -8,20 +8,19 @@ import {openWebPage} from "../utils";
 const AboutSection = () => {
     return (
         <div
-            className="relative px-40 min-h-screen bg-[#0A192F] font-sans pt-20 text-white">
+            id="about"
+            className="relative px-40 bg-[#0A192F] font-sans pt-20 text-white">
             <h2 className="text-[2.25rem] font-bold text-primary relative ml-[14px] mb-[3.75rem] underline">About
                 Me </h2>
 
-            <div className="flex items-center justify-center px-20 mt-20 gap-[80px]">
+            <div className="flex items-center justify-center px-20 gap-[80px]">
                 <Image src={me} width={255} height={270} className="rounded-full"/>
 
                 <div
-                    className="flex-start relative rounded-xl border-2 border-[#5DD39E] w-[765px] absolute p-[1.875rem]">
-                    <div>
+                    className="flex-start relative rounded-xl border-2 border-[#5DD39E] drop-shadow-xl
+                    hover:shadow-black shadow-md hover:shadow-xl hover:-translate-y-[0.15rem]
+                    bg-gray-800 w-[765px] absolute p-[1.875rem]">
                         <span className="tracking-wide font-normal text-justify mb-[1rem]">
-                            {/*I am a third-year CS student who likes to listen to lo-fi while coding for hours.*/}
-
-                            {/*💼 GSoC'22 at 52° North | MLH Fellow Summer'22 at Solana Labs | GitHub Campus Expert | Android Developer | Solana Blockchain Developer | GSSoC'22 Mentor*/}
                             Hello! I'm Dhiraj, a third-year CS student from India, a software developer who likes to
                             build stuff that makes a difference in the world.<br/>
                             I usually work on <b>Android development</b>, <b>web development</b>, and <b>Solana
@@ -57,7 +56,6 @@ const AboutSection = () => {
                         </div>
                     </div>
                 </div>
-            </div>
         </div>
     );
 };
