@@ -4,6 +4,8 @@ import Image from "next/image";
 import me from "../../assets/images/profile_picture_1.png";
 import HeroSocials from "../../components/HeroSocials";
 import ScrollDown from "../../components/scrolldown";
+import {openWebPage} from "../../utils";
+import {contact} from "../../utils/links";
 
 
 export const HomeView: FC = ({}) => {
@@ -19,7 +21,9 @@ export const HomeView: FC = ({}) => {
                     <HeroSocials/>
                     <button className="btn btn-primary btn-xs opacity-80 hover:opacity-100 shadow-[#dcdde1] shadow-md
                     hover:shadow-xl hover:transition-all sm:btn-xs md:btn-sm lg:btn-md  capitalize border-none
-                    bg-secondary rounded-full my-2">Get in Touch
+                    bg-secondary rounded-full my-2" onClick={() => {
+                        openWebPage(contact)
+                    }}>Get in Touch
                     </button>
                 </ol>
                 <ScrollDown/>
