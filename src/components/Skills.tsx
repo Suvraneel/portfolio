@@ -9,7 +9,7 @@ const SkillsSection = () => {
     return (
         <div
             id="skills"
-            className="relative px-40 min-h-screen bg-[#0A192F] font-sans pt-20 text-white">
+            className="relative px-40 bg-[#0A192F] font-sans pt-20 text-white">
             <h2 className="text-[2.25rem] font-bold text-primary relative ml-[14px] mb-[3.75rem] underline">Skills</h2>
 
             <div className="px-20 gap-[80px]">

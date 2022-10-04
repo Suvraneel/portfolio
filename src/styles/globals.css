@@ -16,6 +16,11 @@ a {
   text-underline-offset: 3px;
 }
 
+u {
+  color: inherit;
+  text-underline-offset: 3px;
+}
+
 * {
   box-sizing: border-box;
 }

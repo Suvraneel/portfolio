@@ -3,6 +3,7 @@ import {FC} from 'react';
 import AboutSection from "../../components/About";
 import HeroSection from "../../components/Hero";
 import SkillsSection from "../../components/Skills";
+import ExperienceSection from "../../components/work-experience/Experience";
 
 
 export const HomeView: FC = ({}) => {
@@ -12,6 +13,7 @@ export const HomeView: FC = ({}) => {
             <HeroSection/>
             <AboutSection/>
             <SkillsSection/>
+            <ExperienceSection/>
         </>
     );
 };
