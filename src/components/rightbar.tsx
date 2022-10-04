@@ -26,7 +26,7 @@ const RightBar = (props) => {
                             <li>
                                 <a href="#home">
                                     <RiHome2Line className="text-2xl" color="aquamarine"/>
-                                    <p className="flex justify-center items-center text-[14px]">Home</p>
+                                    <p className="flex justify-center text-white items-center text-[16px]">Home</p>
                                 </a>
 
                             </li>
@@ -36,56 +36,56 @@ const RightBar = (props) => {
                     <li className="nav__item">
                         <a href="#about">
                             <RiUser3Line className="text-2xl" color="aquamarine"/>
-                            <p className="flex justify-center items-center text-[14px]">About</p>
+                            <p className="flex justify-center text-white items-center text-[16px]">About</p>
                         </a>
                     </li>
 
                     <li className="nav__item">
                         <a href="#skills">
                             <RiStackLine className="text-2xl" color="aquamarine"/>
-                            <p className="flex justify-center items-center text-[14px]">Skills</p>
+                            <p className="flex justify-center text-white items-center text-[16px]">Skills</p>
                         </a>
                     </li>
 
                     <li className="nav__item">
                         <a href="#work-experience">
                             <RiBriefcase2Line className="text-2xl" color="aquamarine"/>
-                            <p className="flex justify-center items-center text-[14px]">Experience</p>
+                            <p className="flex justify-center text-white items-center text-[16px]">Experience</p>
                         </a>
                     </li>
 
                     <li className="nav__item">
                         <a href="#projects">
                             <FaLaptopCode className="text-2xl" color="aquamarine"/>
-                            <p className="flex justify-center items-center text-[14px]">Projects</p>
+                            <p className="flex justify-center text-white items-center text-[16px]">Projects</p>
                         </a>
                     </li>
 
                     <li className="nav__item">
                         <a href="https://resume.cdhiraj40.dev">
                             <RiFileList3Line className="text-2xl" color="aquamarine"/>
-                            <p className="flex justify-center items-center text-[14px]">Resume</p>
+                            <p className="flex justify-center text-white items-center text-[16px]">Resume</p>
                         </a>
                     </li>
 
                     <li className="nav__item">
                         <a href="#talks">
                             <TbMicrophone2 className="text-2xl" color="aquamarine"/>
-                            <p className="flex justify-center items-center text-[14px]">Talks</p>
+                            <p className="flex justify-center text-white items-center text-[16px]">Talks</p>
                         </a>
                     </li>
 
                     <li className="nav__item">
                         <a href="#blogs" className="aquamarine">
                             <RiDraftLine className="text-2xl" color="aquamarine"/>
-                            <p className="flex justify-center items-center text-[14px]">Blogs</p>
+                            <p className="flex justify-center text-white items-center text-[16px]">Blogs</p>
                         </a>
                     </li>
 
                     <li className="nav__item">
                         <a href="https://links.cdhiraj40.dev" className="aquamarine">
                             <RiChat3Line className="text-2xl" color="aquamarine"/>
-                            <p className="flex justify-center items-center text-[14px]">Contact</p>
+                            <p className="flex justify-center text-white items-center text-[16px]">Contact</p>
                         </a>
                     </li>
                 </ul>
