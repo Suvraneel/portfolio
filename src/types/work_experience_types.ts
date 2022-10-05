@@ -7,7 +7,7 @@ export interface WorkExperienceProps {
     companyVisible: boolean;
     timeActive: string;
     description: string[];
-    techStacks: string[];
+    techStacks?: string[];
     extraLinks?: ExtraLinks[];
 }
 

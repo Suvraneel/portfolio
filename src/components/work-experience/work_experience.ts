@@ -39,7 +39,6 @@ export const workExperience: WorkExperienceProps[] = [
             "Built a marketplace from scratch that builders can host Solana grants that community can contribute to.",
             "Worked on creating smart contracts, web3 DB and front end integration.",
             "Collaborated with pod mates to design various implementations and completed the project under 12 weeks.",
-            "Collaborated with pod mates to design various implementations and completed the project under 12 weeks.",
         ],
         techStacks: ["Next.js", "Rust", "Typescript", "Anchor", "Solana-web3"],
         extraLinks: [
@@ -76,7 +75,7 @@ export const workExperience: WorkExperienceProps[] = [
         company: "XIRCLS",
         companyLink: "https://www.linkedin.com/company/xircls/",
         companyVisible: false,
-        timeActive: "May 2022 - September 2022",
+        timeActive: "September 2021 - November 2021",
         description: [
             "<b>3SRB</b><a href='https://play.google.com/store/apps/details?id=com.threesrb.app&hl=en_IN&gl=US'><b><u>(Google Play Store Link)</b></u></a>",
             "Worked with the Android team to  common development tools, and frameworks/libraries that the group will use for the  development.",
@@ -85,7 +84,6 @@ export const workExperience: WorkExperienceProps[] = [
             "<b>XIRCLS</b><a href='https://play.google.com/store/apps/details?id=com.nucleus.xirclslive'><b><u>(Google Play Store Link)</b></u></a>",
             "Worked on the dark theme of the app to provide a better user experience.",
             "Ensure application is properly integrated with the APIs.",
-
         ],
         techStacks: ["Java", "Python", "Firebase", "Postman"],
         extraLinks: [],

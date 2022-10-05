@@ -1,17 +1,18 @@
 import React, {useState} from 'react';
-import {workExperience} from "./work_experience";
+import {volunteerWorkExperience} from "./volunteer_work_experience";
 import {Tab, TabList, TabPanel, Tabs} from "react-tabs";
 import {openWebPage} from "../../utils";
 
-const ExperienceSection = () => {
+const VolunteerExperienceSection = () => {
     const [tabIndex, setTabIndex] = useState(0);
 
     return (
         <div
-            id="experience"
-            className="relative px-40 bg-[#0A192F] font-sans pt-20 text-white">
-            <h2 className="text-[2.25rem] font-bold text-primary relative ml-[14px] mb-[3.75rem] underline">Work
-                Experience </h2>
+            id="volunteer-experience"
+            className="relative px-40 min-h-screen bg-[#0A192F] font-sans pt-20 text-white">
+            <h2 className="text-[2.25rem] font-bold text-primary relative ml-[14px] mb-[3.75rem] underline">
+                Volunteer Experience
+            </h2>
 
             <div className="px-20">
                 <Tabs
@@ -22,12 +23,12 @@ const ExperienceSection = () => {
                     selectedTabPanelClassName={"shadow-black shadow-xl -translate-y-[0.15rem]"}
                 >
                     <TabList className=" mb-[1.25rem]">
-                        {workExperience.map((experience) => {
+                        {volunteerWorkExperience.map((experience) => {
                             const {idx, company} = experience;
                             return (
                                 <Tab className="flex relative" key={idx}>
-                                    <button className="inline-block text-left font-bold w-full bg-transparent px-[2rem]
-                                    hover:text-secondary py-[1rem] cursor-pointer">
+                                    <button className="inline-block text-left font-bold w-full bg-transparent px-[2rem] py-[1rem]
+                                    cursor-pointer">
                                         {company}
                                     </button>
                                 </Tab>
@@ -35,7 +36,7 @@ const ExperienceSection = () => {
                         })}
                     </TabList>
 
-                    {workExperience.map((experience) => {
+                    {volunteerWorkExperience.map((experience) => {
                         const {
                             idx,
                             company,
@@ -90,14 +91,18 @@ const ExperienceSection = () => {
                                                         </>
                                                     );
                                                 })}
-                                                <li className="mb-2">Technology used: {techStacks.map((info, index) => {
-                                                    return (<span className="font-bold"
-                                                                  key={index}>
+                                                {techStacks ? (
+                                                    <li className="mb-2">Technology
+                                                        used: {techStacks.map((info, index) => {
+                                                            return (<span className="font-bold"
+                                                                          key={index}>
                                                                 {info},&nbsp;
                                                         </span>
-                                                    );
-                                                })}</li>
-                                            </ul>
+                                                            );
+                                                        })}</li>
+                                                ) : null
+                                                }
+                                                    </ul>
                                             {extraLinks ? extraLinks.map((extraLinks, index) => {
                                                 return <button
                                                     className="btn btn-primary rounded-xl border-none bg-secondary hover:bg-primary mr-4"
@@ -107,7 +112,7 @@ const ExperienceSection = () => {
                                                 </button>
                                             }) : null
                                             }
-                                        </span>
+                                                    </span>
                                     </div>
                                 </div>
                             </TabPanel>
@@ -119,4 +124,4 @@ const ExperienceSection = () => {
     );
 };
 
-export default ExperienceSection;
+export default VolunteerExperienceSection;
