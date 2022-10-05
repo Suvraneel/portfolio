@@ -1,16 +1,14 @@
 import React from 'react';
-import me from "../assets/images/profile_picture_1.png";
-import Image from "next/image";
-import {contact, resume, talks} from "../utils/links";
-import Button from "./common/button";
-import {openWebPage} from "../utils";
+import Text from "./common/text";
 
 const SkillsSection = () => {
     return (
         <div
             id="skills"
             className="relative px-40 bg-[#0A192F] font-sans pt-20 text-white">
-            <h2 className="text-[2.25rem] font-bold text-primary relative ml-[14px] mb-[3.75rem] underline">Skills</h2>
+            <Text variant="big-heading">
+                Skills
+            </Text>
 
             <div className="px-20 gap-[80px]">
                 <div

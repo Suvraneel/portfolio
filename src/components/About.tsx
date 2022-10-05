@@ -4,14 +4,16 @@ import Image from "next/image";
 import {contact, resume, talks} from "../utils/links";
 import Button from "./common/button";
 import {openWebPage} from "../utils";
+import Text from "./common/text";
 
 const AboutSection = () => {
     return (
         <div
             id="about"
             className="relative px-40 bg-[#0A192F] font-sans pt-20 text-white">
-            <h2 className="text-[2.25rem] font-bold text-primary relative ml-[14px] mb-[3.75rem] underline">About
-                Me </h2>
+            <Text variant="big-heading">
+                About Me
+            </Text>
 
             <div className="flex items-center justify-center px-20 gap-[80px]">
                 <Image src={me} width={255} height={270} className="rounded-full"/>
@@ -48,14 +50,14 @@ const AboutSection = () => {
                                 </li>
                             </ul>
                         </span>
-                        <div className="space-x-5 mt-2">
-                            <Button variant={"rounded_with_secondary"}
-                                    onClick={() => openWebPage(resume)}>Checkout my Resume</Button>
-                            <Button variant={"rounded_with_secondary"}
-                                    onClick={() => openWebPage(contact)}>Connect with me</Button>
-                        </div>
+                    <div className="space-x-5 mt-2">
+                        <Button variant={"rounded_with_secondary"}
+                                onClick={() => openWebPage(resume)}>Checkout my Resume</Button>
+                        <Button variant={"rounded_with_secondary"}
+                                onClick={() => openWebPage(contact)}>Connect with me</Button>
                     </div>
                 </div>
+            </div>
         </div>
     );
 };

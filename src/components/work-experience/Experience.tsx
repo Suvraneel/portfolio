@@ -2,6 +2,7 @@ import React, {useState} from 'react';
 import {workExperience} from "./work_experience";
 import {Tab, TabList, TabPanel, Tabs} from "react-tabs";
 import {openWebPage} from "../../utils";
+import Text from "../common/text";
 
 const ExperienceSection = () => {
     const [tabIndex, setTabIndex] = useState(0);
@@ -10,8 +11,9 @@ const ExperienceSection = () => {
         <div
             id="experience"
             className="relative px-40 bg-[#0A192F] font-sans pt-20 text-white">
-            <h2 className="text-[2.25rem] font-bold text-primary relative ml-[14px] mb-[3.75rem] underline">Work
-                Experience </h2>
+            <Text variant="big-heading">
+                Work Experience
+            </Text>
 
             <div className="px-20">
                 <Tabs

@@ -2,6 +2,7 @@ import React, {useState} from 'react';
 import {volunteerWorkExperience} from "./volunteer_work_experience";
 import {Tab, TabList, TabPanel, Tabs} from "react-tabs";
 import {openWebPage} from "../../utils";
+import Text from "../common/text";
 
 const VolunteerExperienceSection = () => {
     const [tabIndex, setTabIndex] = useState(0);
@@ -9,10 +10,10 @@ const VolunteerExperienceSection = () => {
     return (
         <div
             id="volunteer-experience"
-            className="relative px-40 min-h-screen bg-[#0A192F] font-sans pt-20 text-white">
-            <h2 className="text-[2.25rem] font-bold text-primary relative ml-[14px] mb-[3.75rem] underline">
+            className="relative px-40 bg-[#0A192F] font-sans pt-20 text-white">
+            <Text variant="big-heading">
                 Volunteer Experience
-            </h2>
+            </Text>
 
             <div className="px-20">
                 <Tabs
