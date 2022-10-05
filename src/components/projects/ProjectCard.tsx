@@ -21,8 +21,17 @@ const ProjectCard = ({
                     className='absolute flex items-center justify-center w-60 h-60 transition-opacity opacity-0 bg-slate-700 hover:opacity-90'>
                     <Button variant={"secondary"} className='m-auto btn bg-secondary hover:bg-[aquamarine]
                         hover:text-black' onClick={() => openWebPage(projectLink)}>Learn More</Button>
+                    <div
+                        className="absolute flex rounded-r items-center justify-center top-0">
+                    <span
+                        className="px-4 rounded-b bg-secondary font-bold text-white flex align-center w-max
+                        transition duration-300 ease">
+                        {category}
+                    </span>
+                    </div>
                 </div>
                 <img className='w-60 h-60' src={imageLink} alt="Project Image"/>
+
                 <div className="absolute left-0 bottom-0 mx-4 space-x-2 my-4 items-center">
                     <button
                         className='btn rounded-full bg-secondary text-white border-none hover:bg-[aquamarine] hover:text-black'>
