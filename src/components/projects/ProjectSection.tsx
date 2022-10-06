@@ -21,13 +21,15 @@ const ProjectSection = () => {
                     ))
                 }
             </div>
-            <Button
-                variant={"rounded_with_secondary"}
-                className="rounded-xl my-16"
-                onClick={
-                    () => window.open(projects, "_blank")
-                }>View all projects
-            </Button>
+            <div className="flex justify-center my-8">
+                <Button
+                    variant={"rounded_with_secondary"}
+                    className="rounded-xl"
+                    onClick={
+                        () => window.open(projects, "_blank")
+                    }>View all projects
+                </Button>
+            </div>
         </div>
     );
 };
