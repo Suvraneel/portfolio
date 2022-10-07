@@ -78,6 +78,10 @@ b {
     text-decoration-color: #8332AC;
 }
 
+.youtubeContainer {
+    border-radius: 12px;
+}
+
 @keyframes move {
     25% {
         opacity: 1;
