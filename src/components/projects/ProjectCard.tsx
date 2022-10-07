@@ -3,19 +3,20 @@ import Button from "../common/button";
 import {ProjectProps} from "../../types/project_types";
 import {FaGithub, FaLink} from "react-icons/fa";
 import {openWebPage} from "../../utils";
+import Image from "next/image";
 
 const ProjectCard = ({
                          idx,
                          title,
                          description,
-                         imageLink,
+                         imagePath,
                          projectLink,
                          demoLink,
                          techStack,
                          category
                      }: ProjectProps) => {
     return (
-        <div className="card w-96 shadow-xl bg-[#1F2937] border-2 border-[#5DD39E]">
+        <div className="card w-96 shadow-xl bg-[#1F2937] border-2 p-2 border-[#5DD39E]">
             <figure className='relative'>
                 <div
                     className='absolute flex items-center justify-center w-60 h-60 transition-opacity opacity-0 bg-slate-700 hover:opacity-90'>
@@ -30,7 +31,8 @@ const ProjectCard = ({
                     </span>
                     </div>
                 </div>
-                <img className='w-60 h-60' src={imageLink} alt="Project Image"/>
+                <Image className='rounded-xl' width={360} height={240} src={imagePath} alt="Project Image"/>
+                {/*<img className='w-60 h-60 rounded-xl' src={imagePath} alt="Project Image"/>*/}
 
                 <div className="absolute left-0 bottom-0 mx-4 space-x-2 my-4 items-center">
                     <button

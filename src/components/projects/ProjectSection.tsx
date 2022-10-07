@@ -9,7 +9,7 @@ const ProjectSection = () => {
     return (
         <div
             id="projects"
-            className="relative min-h-screen px-40 bg-[#0A192F] font-sans pt-20 text-white">
+            className="relative px-40 bg-[#0A192F] font-sans pt-20 text-white">
             <Text variant="big-heading">
                 Projects
             </Text>
@@ -21,10 +21,10 @@ const ProjectSection = () => {
                     ))
                 }
             </div>
-            <div className="flex justify-center my-8">
+            <div className="flex justify-center mt-8">
                 <Button
                     variant={"rounded_with_secondary"}
-                    className="rounded-xl"
+                    className="rounded-xl uppercase"
                     onClick={
                         () => window.open(projects, "_blank")
                     }>View all projects

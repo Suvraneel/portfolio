@@ -2,7 +2,7 @@ export interface ProjectProps {
     idx: number;
     title: string;
     description: string;
-    imageLink: string;
+    imagePath: string;
     projectLink: string;
     demoLink?: string;
     techStack: string[];
