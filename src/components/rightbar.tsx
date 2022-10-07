@@ -11,6 +11,7 @@ import {
 } from "react-icons/ri";
 import {TbMicrophone2} from "react-icons/tb";
 import {FaLaptopCode} from "react-icons/fa";
+import {talks} from "../utils/links";
 
 
 const RightBar = (props) => {
@@ -64,7 +65,7 @@ const RightBar = (props) => {
                     </li>
 
                     <li className="nav__item">
-                        <a href="#talks">
+                        <a href={talks}>
                             <TbMicrophone2 className="text-2xl hover:text-primary text-[aquamarine]"/>
                             <p className="flex justify-center text-white items-center text-[16px]">Talks</p>
                         </a>

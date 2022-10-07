@@ -1,5 +1,4 @@
 import React from 'react';
-import me from "../assets/images/profile_picture_1.png";
 import Image from "next/image";
 import {contact, resume, talks} from "../utils/links";
 import Button from "./common/button";
@@ -16,7 +15,7 @@ const AboutSection = () => {
             </Text>
 
             <div className="flex items-center justify-center px-20 gap-[80px]">
-                <Image src={me} width={255} height={270} className="rounded-full"/>
+                <Image src={"/images/profile_picture_1.png"} width={255} height={270} className="rounded-full"/>
 
                 <div
                     className="flex-start relative rounded-xl border-2 border-[#5DD39E] drop-shadow-xl
