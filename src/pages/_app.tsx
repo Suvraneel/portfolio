@@ -1,7 +1,7 @@
 import {AppProps} from 'next/app';
 import Head from 'next/head';
 import {FC} from 'react';
-import RightBar from "../components/rightbar";
+import RightBar from "../components/rightbar/rightbar";
 
 require('../styles/globals.css');
 
