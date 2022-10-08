@@ -7,6 +7,7 @@ import ExperienceSection from "../../components/work-experience/Experience";
 import VolunteerExperienceSection from "../../components/volunteer-experience/VolunteerExperience";
 import ProjectSection from "../../components/projects/ProjectSection";
 import TalksSection from "../../components/talks/TalksSection";
+import BlogSection from "../../components/blogs/BlogSection";
 
 
 export const HomeView: FC = ({}) => {
@@ -20,6 +21,7 @@ export const HomeView: FC = ({}) => {
             <VolunteerExperienceSection/>
             <ProjectSection/>
             <TalksSection/>
+            <BlogSection/>
         </>
     );
 };
