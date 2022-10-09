@@ -8,8 +8,8 @@ import Button from 'components/common/button';
 import Text from 'components/common/text';
 
 const opts: YouTubeProps['opts'] = {
-    height: '390',
-    width: '640',
+    height: '300',
+    width: '550',
     playerVars: {
         // https://developers.google.com/youtube/player_parameters
         autoplay: 0,
@@ -21,11 +21,11 @@ const TalkCard = ({
                       title,
                       imagePath,
                       videoID,
-                      timing,
+                      date,
                   }: TalkProps) => {
 
     return (
-        <div className="card w-auto shadow-xl bg-[#1F2937] border-2 p-2 border-[#5DD39E]">
+        <div className="card shadow-xl bg-gray-800 border-2 p-2 border-[#5DD39E]">
             <figure className='relative'>
                 {
                     videoID
@@ -34,13 +34,13 @@ const TalkCard = ({
                 }
                 {
                     imagePath
-                        ? <Image className='rounded-xl' width={640} height={390} src={imagePath} alt="Talk Image"/>
+                        ? <Image className='rounded-xl' width={550} height={300} src={imagePath} alt="Talk Image"/>
                         : null
                 }
             </figure>
             <div className="mx-2 text-secondary items-center">
                 <h2 className="card-title mt-1 float-left text-2xl underline underline-offset-2">{title}</h2>
-                <Text variant="paragraph" className="float-right mt-2">{timing}</Text>
+                <Text variant="paragraph" className="float-right mt-2">{date}</Text>
             </div>
             <div className="justify-center px-3 mb-1 space-x-4 tems-center">
                 <Button className="rounded-xl px-3" variant={"rounded_with_secondary"}

@@ -21,9 +21,9 @@ type ButtonProps = {
  */
 const variants = {
     primary: 'border-transparent bg-primary text-white font-bold',
-    secondary: 'border-transparent bg-secondary text-white hover:bg-primary font-bold',
+    secondary: 'border-transparent bg-secondary text-white hover:bg-primary font-bold hover:border-2 hover:border-black',
     rounded_with_primary: 'rounded-full',
-    rounded_with_secondary: 'rounded-full',
+    rounded_with_secondary: 'btn rounded-xl',
 };
 
 /**

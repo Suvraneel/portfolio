@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Noto+Sans&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Noto+Sans&display=swap");
 
 @tailwind base;
 @tailwind components;
@@ -6,11 +6,14 @@
 
 body {
     padding: 0;
-    margin: 0;
+    margin-right: 14rem;
+    margin-left: 7rem;
+    background: #0A192F;
     font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans,
     Helvetica Neue, sans-serif, "Noto Sans";
     scroll-behavior: smooth;
 }
+
 
 a {
     color: inherit;
@@ -25,11 +28,12 @@ u {
 
 * {
     box-sizing: border-box;
+    font-family: sans-serif;
 }
 
 .hero-social-link {
     color: #5DD39E;
-    font-size: 1.5rem;
+    font-size: 1.75rem;
     transition: 0.3s;
 }
 

@@ -16,7 +16,7 @@ const ProjectCard = ({
                          category
                      }: ProjectProps) => {
     return (
-        <div className="card w-96 shadow-xl bg-[#1F2937] border-2 p-2 border-[#5DD39E]">
+        <div className="card w-96 shadow-xl bg-gray-800 border-2 p-2 border-[#5DD39E]">
             <figure className='relative'>
                 <div
                     className='absolute flex items-center justify-center w-60 h-60 transition-opacity opacity-0 bg-slate-700 hover:opacity-90'>
@@ -51,10 +51,10 @@ const ProjectCard = ({
                     }
                 </div>
             </figure>
-            <div className="p-[24px] text-white">
+            <div className="px-[10px] text-white">
                 <h2 className="card-title text-2xl text-secondary underline underline-offset-2">{title}</h2>
                 <div dangerouslySetInnerHTML={{__html: description}}/>
-                <div className="justify-start">
+                <div className="justify-start mb-2">
                     {techStack.map((tech, idx) => (
                         <div className="badge badge-outline border-primary mr-2 mt-4 p-4">{tech}</div>
                     ))}

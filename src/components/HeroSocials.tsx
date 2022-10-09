@@ -4,7 +4,7 @@ import {SiGmail} from "react-icons/si";
 
 const HeroSocials = () => {
     return (
-        <div className="flex items-center justify-center space-x-4 my-2">
+        <div className="flex space-x-4 my-2">
             <a href='https://www.linkedin.com/in/cdhiraj40/' className='hero-social-link' target='_blank'>
                 <FaLinkedinIn/>
             </a>

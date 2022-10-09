@@ -4,7 +4,7 @@ export interface TalkProps {
     title: string;
     imagePath?: string;
     videoID?: string;
-    timing: string;
+    date: string;
 }
 
 // export interface TalkProps {

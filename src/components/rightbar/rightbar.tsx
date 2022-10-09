@@ -7,7 +7,7 @@ const RightBar = (props) => {
     return (
         <>
             <div
-                className="fixed right-0 top-0 bg-[#0A192F] border-l-2 border-primary w-28 min-h-screen flex flex-col justify-center z-11">
+                className="fixed right-0 top-0 border-l-2 border-primary w-28 min-h-screen flex flex-col justify-center z-11">
                 <ul className="flex flex-col gap-8">
                     {rightBarItems.map(({Icon, label, url}, idx) => (
                         <a href={url} className="flex flex-col justify-center items-center">

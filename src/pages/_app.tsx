@@ -10,6 +10,7 @@ const App: FC<AppProps> = ({Component, pageProps}) => {
         <>
             <Head>
                 <title>Dhiraj Chauhan</title>
+                <link rel="favicon icon" href="/images/profile_picture_1.png"/>
             </Head>
             <div className="flex flex-col h-screen">
                 <Component {...pageProps} />

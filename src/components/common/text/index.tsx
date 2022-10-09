@@ -24,7 +24,7 @@ type TextProps = {
  */
 const variants = {
     'big-heading': 'text-4xl font-bold text-primary relative underline underline-offset-4 ' +
-        'ml-[14px] mb-[3.75rem]',
+        'mb-[3.75rem]',
     heading: 'text-4xl font-bold',
     'sub-heading': 'text-lg font-medium',
     paragraph: 'text-lg',

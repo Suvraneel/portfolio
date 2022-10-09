@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 import Text from "../common/text";
 import {projectList} from "./projectList";
 import ProjectCard from "./ProjectCard";
@@ -9,25 +9,22 @@ const ProjectSection = () => {
     return (
         <div
             id="projects"
-            className="relative px-40 bg-[#0A192F] font-sans pt-20 text-white">
-            <Text variant="big-heading">
-                Projects
-            </Text>
+            className="relative font-silkscreen pt-20 text-white"
+        >
+            <Text variant="big-heading" className="pl-[120px]">Projects</Text>
 
-            <div className='flex flex-wrap justify-center gap-20'>
-                {
-                    projectList.map((props, idx) => (
-                        <ProjectCard {...props} key={idx} idx={props.idx}/>
-                    ))
-                }
+            <div className="flex flex-wrap justify-center gap-10">
+                {projectList.map((props, idx) => (
+                    <ProjectCard {...props} key={idx} idx={props.idx}/>
+                ))}
             </div>
             <div className="flex justify-center mt-8">
                 <Button
                     variant={"rounded_with_secondary"}
                     className="rounded-xl uppercase"
-                    onClick={
-                        () => window.open(projects, "_blank")
-                    }>View all projects
+                    onClick={() => window.open(projects, "_blank")}
+                >
+                    View all projects
                 </Button>
             </div>
         </div>

@@ -3,11 +3,9 @@ module.exports = {
     content: ["./src/**/*.{js,jsx,ts,tsx}"],
     darkMode: "media",
     theme: {
-        fontFamily: {
-            'sans': ['Noto Sans']
-        },
         extend: {},
     },
+
     plugins: [
         require('daisyui'),
         require("@tailwindcss/typography")
@@ -22,7 +20,7 @@ module.exports = {
                         display: ['PT Mono, monospace'],
                         body: ['Inter, sans-serif'],
                     },
-                    'primary': '#8332AC',           /* Primary color */
+                    'primary': '#9577fa',           /* Primary color */
 
                     'secondary': '#EF8275',         /* Secondary color */
 
