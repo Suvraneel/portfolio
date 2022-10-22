@@ -3,7 +3,7 @@ import { HomeView } from "../views";
 
 const Home: NextPage = () => {
   return (
-    <div>
+    <div className="w-full h-full">
       <HomeView />
     </div>
   );

@@ -8,7 +8,7 @@ const AboutSection = () => {
     return (
         <div
             id="about"
-            className="relative font-silkscreen pt-20 text-white"
+            className="relative w-full font-silkscreen pt-20 text-white"
         >
             <Text variant="big-heading" className="pl-[120px]">About Me</Text>
 

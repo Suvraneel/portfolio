@@ -16,7 +16,7 @@ export const HomeView: FC = ({}) => {
     return (
         <>
             <HeroSection/>
-            <div className="space-y-20">
+            <div className="w-full space-y-20">
                 <AboutSection/>
                 <SkillsSection/>
                 <ExperienceSection/>

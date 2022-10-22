@@ -9,7 +9,7 @@ const HeroSection = () => {
     return (
         <div
             id="home"
-            className="relative min-h-screen font-silkscreen flex items-center justify-center text-white"
+            className="w-full min-h-screen font-silkscreen flex items-center justify-center text-white"
         >
             <div className="hero">
                 <div className="flex items-center justify-center">

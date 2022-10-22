@@ -10,13 +10,13 @@ const VolunteerExperienceSection = () => {
     return (
         <div
             id="volunteer-experience"
-            className="relative font-silkscreen pt-20 text-white"
+            className="w-full font-silkscreen pt-20 text-white flex flex-col"
         >
             <Text variant="big-heading" className="pl-[120px]">Volunteer Experience</Text>
 
-            <div className="flex items-center text-lg justify-center">
+            <div className="flex items-center text-lg justify-center pl-20 w-full">
                 <Tabs
-                    className="flex"
+                    className="tab-flex"
                     selectedIndex={tabIndex}
                     onSelect={(index) => setTabIndex(index)}
                     selectedTabClassName={
@@ -56,7 +56,7 @@ const VolunteerExperienceSection = () => {
                             extraLinks,
                         } = experience;
                         return (
-                            <TabPanel className="flex" key={idx}>
+                            <TabPanel className="w-full flex" key={idx}>
                                 <div
                                     className="flex-start relative rounded-r-xl border-2 border-[#5DD39E] drop-shadow-xl
                                 shadow-md bg-gray-800 w-[765px] absolute p-[1.875rem]"

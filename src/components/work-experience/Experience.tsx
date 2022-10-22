@@ -1,94 +1,93 @@
-import React, {useState} from "react";
-import {workExperience} from "./work_experience";
-import {Tab, TabList, TabPanel, Tabs} from "react-tabs";
-import {openWebPage} from "../../utils";
+import React, { useState } from "react";
+import { workExperience } from "./work_experience";
+import { Tab, TabList, TabPanel, Tabs } from "react-tabs";
+import { openWebPage } from "../../utils";
 import Text from "../common/text";
 
 const ExperienceSection = () => {
-    const [tabIndex, setTabIndex] = useState(0);
+  const [tabIndex, setTabIndex] = useState(0);
 
-    return (
-        <div
-            id="experience"
-            className="relative font-silkscreen pt-20 text-white"
+  return (
+    <div id="experience" className="relative font-silkscreen pt-20 text-white">
+      <Text variant="big-heading" className="pl-[120px]">
+        Work Experience
+      </Text>
+
+      <div className="w-full flex items-center text-lg justify-center pl-20 w-full">
+        <Tabs
+          className="tab-flex"
+          selectedIndex={tabIndex}
+          onSelect={(index) => setTabIndex(index)}
+          selectedTabClassName={
+            "text-secondary bg-gray-100 bg-opacity-20 backdrop-blur-lg drop-shadow-lg rounded-l-lg"
+          }
+          selectedTabPanelClassName={
+            "shadow-black shadow-xl -translate-y-[0.15rem]"
+          }
         >
-            <Text variant="big-heading" className="pl-[120px]">Work Experience</Text>
-
-            <div className="flex items-center text-lg justify-center">
-                <Tabs
-                    className="flex"
-                    selectedIndex={tabIndex}
-                    onSelect={(index) => setTabIndex(index)}
-                    selectedTabClassName={
-                        "text-secondary bg-gray-100 bg-opacity-20 backdrop-blur-lg drop-shadow-lg rounded-l-lg"
-                    }
-                    selectedTabPanelClassName={
-                        "shadow-black shadow-xl -translate-y-[0.15rem]"
-                    }
-                >
-                    <TabList className=" mb-[1.25rem]">
-                        {workExperience.map((experience) => {
-                            const {idx, company} = experience;
-                            return (
-                                <Tab className="flex relative" key={idx}>
-                                    <button
-                                        className="inline-block text-left font-bold w-full bg-transparent px-[2rem]
+          <TabList className=" mb-[1.25rem]">
+            {workExperience.map((experience) => {
+              const { idx, company } = experience;
+              return (
+                <Tab className="flex relative" key={idx}>
+                  <button
+                    className="inline-block text-left font-bold w-full bg-transparent px-[2rem]
                                     hover:text-secondary py-[1rem] cursor-pointer"
-                                    >
-                                        {company}
-                                    </button>
-                                </Tab>
-                            );
-                        })}
-                    </TabList>
+                  >
+                    {company}
+                  </button>
+                </Tab>
+              );
+            })}
+          </TabList>
 
-                    {workExperience.map((experience) => {
-                        const {
-                            idx,
-                            company,
-                            companyLink,
-                            companyVisible,
-                            timeActive,
-                            title,
-                            description,
-                            position,
-                            techStacks,
-                            extraLinks,
-                        } = experience;
-                        return (
-                            <TabPanel className="flex" key={idx}>
-                                <div
-                                    className="flex-start relative rounded-r-xl border-2 border-[#5DD39E] drop-shadow-xl
+          {workExperience.map((experience) => {
+            const {
+              idx,
+              company,
+              companyLink,
+              companyVisible,
+              timeActive,
+              title,
+              description,
+              position,
+              techStacks,
+              extraLinks,
+            } = experience;
+            return (
+              <TabPanel className="w-full flex" key={idx}>
+                <div
+                  className="flex-start relative rounded-r-xl border-2 border-[#5DD39E] drop-shadow-xl
                                 shadow-md bg-gray-800 w-[765px] absolute p-[1.875rem]"
-                                >
-                                    <div>
+                >
+                  <div>
                     <span className="tracking-wide font-normal text-justify mb-[1rem]">
                       <div className="flex space-x-2 text-xl mb-1 ">
                         {companyVisible === true ? (
-                            <>
-                                <h2 className="text-primary">{title} at</h2>
-                                <span
-                                    className="cursor-pointer"
-                                    onClick={() => {
-                                        openWebPage(companyLink);
-                                    }}
-                                >
+                          <>
+                            <h2 className="text-primary">{title} at</h2>
+                            <span
+                              className="cursor-pointer"
+                              onClick={() => {
+                                openWebPage(companyLink);
+                              }}
+                            >
                               <b>
                                 <u>{company}</u>
                               </b>
                             </span>
-                            </>
+                          </>
                         ) : (
-                            <h2
-                                className="text-primary cursor-pointer"
-                                onClick={() => {
-                                    openWebPage(companyLink);
-                                }}
-                            >
-                                <b>
-                                    <u>{title}</u>
-                                </b>
-                            </h2>
+                          <h2
+                            className="text-primary cursor-pointer"
+                            onClick={() => {
+                              openWebPage(companyLink);
+                            }}
+                          >
+                            <b>
+                              <u>{title}</u>
+                            </b>
+                          </h2>
                         )}
                       </div>
                       <div className="grid grid-cols-2">
@@ -101,56 +100,56 @@ const ExperienceSection = () => {
                       </div>
                       <ul>
                         {description.map((info, index) => {
-                            return (
-                                <>
-                                    <li
-                                        className="text-white list-disc mb-2"
-                                        key={index}
-                                    >
-                                        <div
-                                            dangerouslySetInnerHTML={{
-                                                __html: info,
-                                            }}
-                                        ></div>
-                                    </li>
-                                </>
-                            );
+                          return (
+                            <>
+                              <li
+                                className="text-white list-disc mb-2"
+                                key={index}
+                              >
+                                <div
+                                  dangerouslySetInnerHTML={{
+                                    __html: info,
+                                  }}
+                                ></div>
+                              </li>
+                            </>
+                          );
                         })}
-                          <li className="mb-2">
+                        <li className="mb-2">
                           Technology used:{" "}
-                              {techStacks.map((info, index) => {
-                                  return (
-                                      <span className="font-bold" key={index}>
+                          {techStacks.map((info, index) => {
+                            return (
+                              <span className="font-bold" key={index}>
                                 {info},&nbsp;
                               </span>
-                                  );
-                              })}
+                            );
+                          })}
                         </li>
                       </ul>
-                        {extraLinks
-                            ? extraLinks.map((extraLinks, index) => {
-                                return (
-                                    <button
-                                        className="btn btn-primary rounded-xl border-none bg-secondary hover:bg-primary mr-4"
-                                        onClick={() =>
-                                            window.open(extraLinks.link, "_blank")
-                                        }
-                                    >
-                                        {extraLinks.text}
-                                    </button>
-                                );
-                            })
-                            : null}
+                      {extraLinks
+                        ? extraLinks.map((extraLinks, index) => {
+                            return (
+                              <button
+                                className="btn btn-primary rounded-xl border-none bg-secondary hover:bg-primary mr-4"
+                                onClick={() =>
+                                  window.open(extraLinks.link, "_blank")
+                                }
+                              >
+                                {extraLinks.text}
+                              </button>
+                            );
+                          })
+                        : null}
                     </span>
-                                    </div>
-                                </div>
-                            </TabPanel>
-                        );
-                    })}
-                </Tabs>
-            </div>
-        </div>
-    );
+                  </div>
+                </div>
+              </TabPanel>
+            );
+          })}
+        </Tabs>
+      </div>
+    </div>
+  );
 };
 
 export default ExperienceSection;
