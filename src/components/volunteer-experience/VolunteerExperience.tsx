@@ -14,7 +14,7 @@ const VolunteerExperienceSection = () => {
         >
             <Text variant="big-heading" className="pl-[120px]">Volunteer Experience</Text>
 
-            <div className="flex items-center text-lg justify-center pl-20 w-full">
+            <div className="w-full flex items-center text-lg justify-center">
                 <Tabs
                     className="tab-flex"
                     selectedIndex={tabIndex}

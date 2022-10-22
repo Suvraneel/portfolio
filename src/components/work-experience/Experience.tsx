@@ -13,7 +13,7 @@ const ExperienceSection = () => {
         Work Experience
       </Text>
 
-      <div className="w-full flex items-center text-lg justify-center pl-20 w-full">
+      <div className="w-full flex items-center text-lg justify-center">
         <Tabs
           className="tab-flex"
           selectedIndex={tabIndex}
