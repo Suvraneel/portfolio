@@ -55,7 +55,7 @@ const ExperienceSection = () => {
               extraLinks,
             } = experience;
             return (
-              <TabPanel className="w-full flex" key={idx}>
+              <TabPanel className="w-full flex items-center justify-center" key={idx}>
                 <div
                   className="flex-start relative rounded-r-xl border-2 border-[#5DD39E] drop-shadow-xl
                                 shadow-md bg-gray-800 w-[765px] absolute p-[1.875rem]"

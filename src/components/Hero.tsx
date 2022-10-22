@@ -13,11 +13,11 @@ const HeroSection = () => {
         >
             <div className="hero">
                 <div className="flex items-center justify-center">
-                    <div className="flex gap-[250px]">
+                    <div className="flex flex-col-reverse sm:flex-row justify-evenly gap-8">
                         <div className="flex items-center justify-center">
-                            <div>
-                                <h1 className="text-8xl font-bold">Dhiraj Chauhan</h1>
-                                <p className="text-3xl font-bold pt-6 pb-4">
+                            <div className="flex flex-col items-center justify-evenly">
+                                <h1 className="w-full text-3xl sm:text-5xl md:text-7xl font-bold">Dhiraj Chauhan</h1>
+                                <p className="w-full text-2xl sm:text-3xl font-bold pt-6 pb-4">
                                     Software Developer
                                 </p>
                                 <HeroSocials/>

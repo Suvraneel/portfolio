@@ -12,7 +12,7 @@ const App: FC<AppProps> = ({ Component, pageProps }) => {
         <title>Dhiraj Chauhan</title>
         <link rel="favicon icon" href="/images/profile_picture_1.png" />
       </Head>
-      <div className="flex flex-row w-full justify-between">
+      <div className="flex flex-row w-full justify-between bg-black">
         <div className="w-full sm:w-11/12 flex flex-col">
           <Component {...pageProps} />
         </div>

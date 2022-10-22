@@ -16,7 +16,7 @@ const ProjectCard = ({
                          category
                      }: ProjectProps) => {
     return (
-        <div className="card w-96 shadow-xl bg-gray-800 border-2 p-2 border-[#5DD39E]">
+        <div className="card w-96 shadow-xl bg-gray-800 border-2 p-2 border-[#5DD39E] h-full">
             <figure className='relative'>
                 <div
                     className='absolute flex items-center justify-center w-60 h-60 transition-opacity opacity-0 bg-slate-700 hover:opacity-90'>

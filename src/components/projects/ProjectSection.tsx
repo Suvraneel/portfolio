@@ -13,7 +13,7 @@ const ProjectSection = () => {
         >
             <Text variant="big-heading" className="pl-[120px]">Projects</Text>
 
-            <div className="flex flex-wrap justify-center gap-10">
+            <div className="flex flex-col lg:flex-row justify-center items-center gap-10 h-full">
                 {projectList.map((props, idx) => (
                     <ProjectCard {...props} key={idx} idx={props.idx}/>
                 ))}
